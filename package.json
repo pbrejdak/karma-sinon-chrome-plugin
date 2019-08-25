@@ -1,0 +1,28 @@
+{
+  "name": "karma-sinon-chrome-plugin",
+  "version": "1.0.1",
+  "description": "Karma plugin for sinon-chrome package",
+  "main": "index.js",
+  "dependencies": {
+    "sinon-chrome": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/karma": "3.0.3",
+    "@types/node": "12.6.8",
+    "cpx": "1.5.0",
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "build": "tsc && npm run copyFiles",
+    "copyFiles": "npx cpx ./package.json ./dist && npx cpx README.md ./dist",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "karma",
+    "sinon-chrome",
+    "karma-plugin",
+    "karma-sinon-chrome-plugin"
+  ],
+  "author": "Patryk Brejdak",
+  "license": "MIT"
+}
